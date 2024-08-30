@@ -51,3 +51,20 @@ a:last-child {
     border: 2px black;
 
 }
+
+table {
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    border: 5px solid green;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid red;
+}
+
+td:hover {
+    background-color:  lightcoral;
+    color: white;
+}
