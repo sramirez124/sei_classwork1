@@ -10,8 +10,10 @@ body{
 .header {
     display: flex;
     justify-content: center;
+    justify-content: space-evenly;
     border-bottom: 2px solid white;
-    justify-content: space-around;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 h1{
@@ -24,8 +26,16 @@ h3{
     margin: 0;
 }
 
-.footer {
+p{
+    margin: 2px;
+    padding: 1px;
+}
+
+.body-items {
     display: flex;
     border-top: 2px solid white;
     justify-content: space-evenly;
 }
+
+
+
