@@ -1,7 +1,16 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color-scheme: light dark;
+    background-color: Canvas;
+    color: CanvasText;
+    color-scheme: light dark;
+}
+
+
 .header {
     display: flex;
     justify-content: center;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     justify-content: space-around;
 }
 
@@ -9,8 +18,14 @@ h1{
     text-align: center;
 }
 
+h3{
+    text-decoration: underline;
+    padding: 2px;
+    margin: 0;
+}
+
 .footer {
     display: flex;
-    border-top: 2px solid black;
+    border-top: 2px solid white;
     justify-content: space-evenly;
 }
