@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(8, 18, 74);
+    color: #D7DADC;
+    font-family: Helvetica Neue,Arial,sans-serif;
+}
+
+a:link{
+    color:#D7DADC;
+}
+
+.parent {
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+  .child {
+    display: inline-block;
+    border: 10px solid #D7DADC;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    margin: 10px;
+  }
