@@ -1,0 +1,78 @@
+/* Media Queries (orientations) */
+/* @media only screen and (orientation: landscape) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  body {
+    background-color: lightpink;
+  }
+}
+ */
+
+/* Extra Small Devices */
+/* This will apply CSS Rules to the screen if its less than 600px  */
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: blue;
+    }
+  
+    #container {
+      flex-direction: column;
+    }
+  }
+  
+  
+  /* Small Devices */
+  /* This will apply CSS Rules to the screen if its more than 600px and less than 769px*/
+  @media only screen and (min-width: 600px) {
+    body {
+      background-color:coral;
+    }
+  }
+  
+  
+  /* Medium Devices */
+  /* This will apply CSS Rules to the screen if its more than px*/
+  @media only screen and (min-width: 769px) {
+    body {
+      background-color:fuchsia;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    body {
+      background-color: cadetblue;
+    }
+  }
+  
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    body {
+      background-color:slateblue;
+    }
+  }
+  
+  
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  div:not(#container) {
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  
+  
+  
+  
