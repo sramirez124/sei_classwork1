@@ -8,15 +8,22 @@ a:link{
     color:#D7DADC;
 }
 
+a:visited{
+    color:#D7DADC;
+}
+
 .parent {
-    margin: 1rem;
-    padding: 2rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
-  }
-  .child {
-    display: inline-block;
+    justify-content: center;
+    width: 1000px;
+}
+
+
+.child {
     border: 10px solid #D7DADC;
     padding: 1rem 1rem;
-    vertical-align: middle;
     margin: 10px;
+    max-width: 300px;
   }
