@@ -1,7 +1,8 @@
 body{
     background-color: rgb(8, 18, 74);
     color: #D7DADC;
-    font-family: Helvetica Neue,Arial,sans-serif;
+    font-family: Helvetica,Arial,sans-serif;
+    align-content: center;
 }
 
 a:link{
@@ -15,15 +16,36 @@ a:visited{
 .parent {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    width: 1000px;
+    justify-content: space-evenly;
+    margin-left: 275px;
+    border: 5px solid #D7DADC;
 }
 
 
 .child {
-    border: 10px solid #D7DADC;
+    text-align: center;
+    border: 2px solid #D7DADC;
     padding: 1rem 1rem;
     margin: 10px;
     max-width: 300px;
-  }
+}
+
+.aboutSection {
+    display: flex;
+    margin-left: 275px;
+    border: 5px solid #D7DADC;
+    max-height: 500px;
+    max-width: 1000px;
+}
+
+.about {
+    justify-content: center;
+    padding: 1rem 1rem;
+    margin-left: 10px;
+    align-content: center;
+}
+
+#aboutText{
+    align-self: flex-end;
+    text-align: center
+}
