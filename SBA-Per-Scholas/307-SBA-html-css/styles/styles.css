@@ -49,3 +49,16 @@ a:visited{
     align-self: flex-end;
     text-align: center
 }
+
+.gamesSection {
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    margin-left: 275px;
+    border: 5px solid #D7DADC;
+}
+
+.games{
+    padding: 1rem 1rem;
+    margin-left: 10px;
+}
