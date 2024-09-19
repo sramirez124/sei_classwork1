@@ -1,21 +1,21 @@
-console.log('Functions');
+// console.log('Functions');
 // Verbs of our code
 
 // Three ways to define a function
 
 //1. Function Declaration
 function sayHello() {
-  console.log('hello world!');
+  // console.log('hello world!');
 }
 
 //2 Function Expression
 const sayHi = function () {
-  console.log('hi!');
+  // console.log('hi!');
 };
 
 //3. Arrow Function ES6
 const sayGoodMorning = () => {
-  console.log('Good morning!');
+  // console.log('Good morning!');
   return 'Good morning!';
 };
 
@@ -35,14 +35,14 @@ fnDeclaration(); // thank you function declarations :)
 
 // this function gets hoisted
 function fnDeclaration() {
-  console.log("I'm coming from a function declaration.");
+  // console.log("I'm coming from a function declaration.");
 }
 
 // does NOT get hoisted
 const fnExpression = function () {
-  console.log("I'm coming from a function expression.");
+  // console.log("I'm coming from a function expression.");
 };
-// console.log(fnExpression);
+// // console.log(fnExpression);
 // fnExpression(); // works just fine, because we are referenceing after it's been defined.
 //========================================================
 
@@ -66,7 +66,7 @@ function areBothEven(n1, n2) {
   return !(n1 % 2) && !(n2 % 2);
 }
 
-console.log(areBothEven(8, 6));
+// console.log(areBothEven(8, 6));
 
 // Practice Activity 1: Write a Function Declaration
 function computeArea(width, height) {
@@ -75,7 +75,7 @@ function computeArea(width, height) {
   return s;
 }
 
-console.log(computeArea(5, 10));
+// console.log(computeArea(5, 10));
 
 // Extra
 //========================================================
@@ -99,7 +99,7 @@ for (let i = 0; i < squares.length; i++) {
   const area = computeArea(squares[i].width, squares[i].height);
   squareAreas.push(area);
 }
-// console.log(squareAreas);
+// // console.log(squareAreas);
 //========================================================
 
 // Practice Activity 2: Write a Function Expression
@@ -115,15 +115,15 @@ const planetHasWater = function (planet) {
   return lowercasePlanet === 'earth' || lowercasePlanet === 'mars';
 };
 
-console.log(planetHasWater(9));
+// console.log(planetHasWater(9));
 
-console.log(planetHasWater('EaRtH'));
+// console.log(planetHasWater('EaRtH'));
 
 // Parameters and Arguments
 // arguments give the parameter their value
 
 function foo(a, b, c) {
-  console.log(a, b, c);
+  // console.log(a, b, c);
 }
 
 foo(18, 20);
@@ -151,7 +151,7 @@ const devObject = getDevObject(
   'GraphQL'
 );
 
-// console.log(devObject);
+// // console.log(devObject);
 
 function getDevObject2(name, ...skills) {
   return {
@@ -171,7 +171,7 @@ const devObject2 = getDevObject2(
   'GraphQL'
 );
 
-console.log(devObject2);
+// // console.log(devObject2);
 
 // Default Params
 
@@ -184,7 +184,7 @@ const bike = {
 function setColor(bicycle, color) {
   bicycle.color = color || 'purple';
 
-  console.log(bicycle);
+  // console.log(bicycle);
 }
 
 // setColor(bike, 'green');
@@ -192,7 +192,7 @@ function setColor(bicycle, color) {
 function setColorES6(bicycle, color = 'purple') {
   bicycle.color = color;
 
-  console.log(bicycle);
+  // console.log(bicycle);
 }
 
 setColorES6(bike, 'yellow');
@@ -203,8 +203,30 @@ setColorES6(bike, 'yellow');
  * 
  */
 
-function foo (){
+let colors = ["red", "green", "blue"];
+// function logColor(color){
+//     console.log(color)
+// }
 
-}
+// Passing an anonymous function to the forEach method
+colors.forEach((colors) => {
+    // console.log(colors)
+});
 
-foo
+/**
+ * 
+ * Immediately Invoked Function Expressions (IIFE)
+ * 
+ */
+
+(function () {
+    console.log("I'm running without calling the function");
+})();
+
+
+/**
+ * 
+ * Hoisting
+ * 
+ */
+
